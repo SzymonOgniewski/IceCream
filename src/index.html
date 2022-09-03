@@ -18,8 +18,16 @@
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
     <include src="./partials/hero-header.html"></include>
-
+    <include src="./partials/hero-header-nav.html"></include>
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js"></script>
+    <script src="../src/js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../src/js/mobile-menu.js"></script>
   </body>
 </html>
