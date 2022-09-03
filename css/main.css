@@ -11,13 +11,33 @@
   padding: 0;
 }
 
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 .menu-container {
   position: fixed;
   top: 0;
   left: 20%;
   width: 80%;
   height: 100%;
-  padding: 48px 40px;
   background-color: #e17992;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -27,6 +47,70 @@
   transform: translateX(0);
 }
 
+.js-close-menu {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 23px;
+  right: 34px;
+}
+
+.mobile-navigation__button-box {
+  text-align: center;
+}
+.mobile-navigation__button {
+  border-radius: 22px;
+  width: 186px;
+  height: 44px;
+  border: none;
+  background-color: #ffffff;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.301875;
+  text-align: center;
+  color: #d41443;
+  margin-top: 60px;
+  margin-bottom: 19px;
+}
+.mobile-navigation__button:focus,
+.mobile-navigation__button :hover {
+  background-color: #ecebeb;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: background-color;
+}
+.mobile-navigation__button__text {
+  padding-right: 28px;
+}
+.mobile-navigation__list__item {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  border-top: solid 1px #e18298;
+  border-bottom: solid 1px #e18298;
+  color: #ffffff;
+}
+.mobile-navigation__list__item:focus,
+.mobile-navigation__list__item :hover {
+  color: #d41443;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color;
+}
+.mobile-navigation__list__item__link {
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3021428571;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) {
   .navigation__button {
     display: none;
@@ -76,4 +160,7 @@
   .hero-header__background-circle {
     fill: #ffa5ba;
   }
+}
+.hero-header {
+  background-color: #ffb8ca;
 }/*# sourceMappingURL=main.css.map */
