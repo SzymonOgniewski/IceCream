@@ -1,6 +1,24 @@
 .hero-header {
   background-color: map-get($color, 'background-color-dark');
-  //   &__background-circle {
-  //     fill: map-get($color, 'brand-color-light');
-  //   }
+  background-image: url(/images/background-circle/circle@x1.png);
+  background-size: 346px 344px;
+  background-repeat: no-repeat;
+  background-position-x: 36px;
+  background-position-y: 83px;
+  &__content {
+    position: relative;
+  }
+  &__background-circle {
+    fill: map-get($color, 'brand-color-light');
+    position: absolute;
+  }
 }
+
+// @media screen and (max-width: 767px) {
+//   .hero-header {
+//     &__background-circle {
+//       width: 346px;
+//       height: 344px;
+//     }
+//   }
+// }
