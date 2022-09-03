@@ -11,11 +11,14 @@
   }
   .hero-header {
     &__nav {
-      display: inline-flex;
+      display: flex;
+      align-content: center;
       justify-content: space-between;
+      align-items: center;
     }
     &__logo {
-      margin-right: 20px;
+      padding-left: 20px;
+      padding-top: 6px;
     }
   }
 }
