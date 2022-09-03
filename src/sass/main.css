@@ -3,10 +3,172 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 20%;
+  width: 80%;
+  height: 100%;
+  background-color: #e17992;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.js-close-menu {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 23px;
+  right: 34px;
+}
+
+.mobile-navigation__button-box {
+  text-align: center;
+}
+.mobile-navigation__button {
+  border-radius: 22px;
+  width: 186px;
+  height: 44px;
+  border: none;
+  background-color: #ffffff;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.301875;
+  text-align: center;
+  color: #d41443;
+  margin-top: 60px;
+  margin-bottom: 19px;
+}
+.mobile-navigation__button:focus,
+.mobile-navigation__button :hover {
+  background-color: #ecebeb;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: background-color;
+}
+.mobile-navigation__button__text {
+  padding-right: 28px;
+}
+.mobile-navigation__list__item {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  border-top: solid 1px #e18298;
+  border-bottom: solid 1px #e18298;
+  color: #ffffff;
+}
+.mobile-navigation__list__item:focus,
+.mobile-navigation__list__item :hover {
+  color: #d41443;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color;
+}
+.mobile-navigation__list__item__link {
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3021428571;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navigation__button {
+    display: none;
+  }
+  .navigation__icon__box {
+    align-self: center;
+  }
+  .hero-header__nav {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero-header__logo {
+    padding-left: 20px;
+    padding-top: 6px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero-header__nav-list {
+    display: none;
+  }
+}
+.menu-toggle {
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffb8ca;
+  border-radius: 50%;
+  outline: none;
+}
+.menu-toggle:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-header {
+    background-color: #ffb8ca;
+    background-image: url(/images/background-circle/circle@x1.png);
+    background-size: 346px 344px;
+    background-repeat: no-repeat;
+    background-position-x: 36px;
+    background-position-y: 83px;
+  }
+  .hero-header__background-circle {
+    fill: #ffa5ba;
+  }
+}
+.hero-header {
+  background-color: #ffb8ca;
+}
+
 .about {
   width: 100%;
   padding-top: 80px;
-  background-color: #FFF5F6;
+  background-color: #fff5f6;
   background-image: url("../images/about/milk-mobile-x1.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -73,7 +235,7 @@
   line-height: 1.17;
   letter-spacing: normal;
   width: 198px;
-  color: #FFA5BA;
+  color: #ffa5ba;
   margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
@@ -102,7 +264,7 @@
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: 0.04em;
-  color: #D41443;
+  color: #d41443;
   margin-bottom: 26px;
 }
 @media screen and (min-width: 768px) {
@@ -218,7 +380,7 @@
 }
 
 .about__text2 {
-  color: #907E82;
+  color: #907e82;
   margin-bottom: 25px;
 }
 @media screen and (min-width: 768px) {
@@ -234,7 +396,7 @@
 }
 
 .about__text3 {
-  color: #907E82;
+  color: #907e82;
   margin-bottom: 17px;
 }
 @media screen and (min-width: 768px) {
@@ -258,8 +420,8 @@
   border-radius: 22px;
   padding: 0;
   border: none;
-  background: #FFFFFF;
-  color: #D41443;
+  background: #ffffff;
+  color: #d41443;
   margin-right: auto;
   margin-left: auto;
   cursor: pointer;
