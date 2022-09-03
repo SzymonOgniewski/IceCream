@@ -14,11 +14,11 @@
 .menu-container {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 20%;
+  width: 80%;
   height: 100%;
   padding: 48px 40px;
-  background-color: white;
+  background-color: #e17992;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -35,11 +35,14 @@
     align-self: center;
   }
   .hero-header__nav {
-    display: inline-flex;
+    display: flex;
+    align-content: center;
     justify-content: space-between;
+    align-items: center;
   }
   .hero-header__logo {
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 6px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -61,18 +64,16 @@
   transition-property: fill;
 }
 
-.hero-header {
-  background-color: #ffb8ca;
-  background-image: url(/images/background-circle/circle@x1.png);
-  background-size: 346px 344px;
-  background-repeat: no-repeat;
-  background-position-x: 36px;
-  background-position-y: 83px;
-}
-.hero-header__content {
-  position: relative;
-}
-.hero-header__background-circle {
-  fill: #ffa5ba;
-  position: absolute;
+@media screen and (max-width: 767px) {
+  .hero-header {
+    background-color: #ffb8ca;
+    background-image: url(/images/background-circle/circle@x1.png);
+    background-size: 346px 344px;
+    background-repeat: no-repeat;
+    background-position-x: 36px;
+    background-position-y: 83px;
+  }
+  .hero-header__background-circle {
+    fill: #ffa5ba;
+  }
 }/*# sourceMappingURL=main.css.map */
