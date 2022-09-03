@@ -1,0 +1,39 @@
+@media screen and (max-width: 767px) {
+  .navigation {
+    &__button {
+      display: none;
+    }
+    &__icon {
+      &__box {
+        align-self: center;
+      }
+    }
+  }
+  .hero-header {
+    &__nav {
+      display: inline-flex;
+      justify-content: space-between;
+    }
+    &__logo {
+      margin-right: 20px;
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero-header__nav-list {
+    display: none;
+  }
+}
+.menu-toggle {
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: map-get($color, 'background-color-dark');
+  border-radius: 50%;
+  outline: none;
+  &:focus {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: fill;
+  }
+}
