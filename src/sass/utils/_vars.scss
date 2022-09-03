@@ -1,0 +1,22 @@
+$color: (
+  'brand-color-dark': #d41443,
+  'brand-color-light': #ffa5ba,
+  'text-color-dark': #000000,
+  'text-color-medium': #907e82,
+  'text-color-light': #ffffff,
+  'background-color-dark': #ffb8ca,
+  'background-color-medium': #fff5f6,
+  'background-color-light': #e5e5e5,
+);
+@function getColor($key) {
+  @return map-get($color, $key);
+}
+
+$fontfamily: (
+  'brand-font': 'Titan One',
+  'description-font': 'DM Sans',
+  'sans-serif': sans-serif,
+);
+@function getFF($key) {
+  @return map-get($fontfamily, $key);
+}

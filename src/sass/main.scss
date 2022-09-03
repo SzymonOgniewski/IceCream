@@ -4,4 +4,8 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
+@import './utils/vars.scss';
+@import './components/global-patterns';
+@import './components/hero-header-mobile-menu';
+@import './components/hero-header-nav';
+@import './components/hero-header-section';
