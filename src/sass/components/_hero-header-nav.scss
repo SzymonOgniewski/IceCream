@@ -1,28 +1,27 @@
-@media screen and (max-width: 767px) {
-  .navigation {
-    &__button {
-      display: none;
-    }
-    &__icon {
-      &__box {
-        align-self: center;
-      }
-    }
+.navigation {
+  &__button {
+    display: none;
   }
-  .hero-header {
-    &__nav {
-      display: inline-flex;
-      justify-content: space-between;
-    }
-    &__logo {
-      margin-right: 20px;
+  &__icon {
+    &__box {
+      align-self: center;
     }
   }
 }
-@media screen and (max-width: 1199px) {
-  .hero-header__nav-list {
-    display: none;
+.hero-header {
+  &__nav {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
+  &__logo {
+    padding-left: 20px;
+    padding-top: 6px;
+  }
+}
+.hero-header__nav-list {
+  display: none;
 }
 .menu-toggle {
   margin-right: 20px;
@@ -31,9 +30,84 @@
   background-color: map-get($color, 'background-color-dark');
   border-radius: 50%;
   outline: none;
-  &:focus {
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    transition-property: fill;
+}
+@media screen and (min-width: 768px) {
+  .hero-header {
+    &__logo {
+      padding: 0;
+    }
+    &__nav {
+      padding-left: 34px;
+      padding-right: 34px;
+      padding-top: 37px;
+    }
+  }
+  .navigation {
+    &__button {
+      margin-left: 10px;
+      display: block;
+      width: 160px;
+      height: 44px;
+      border-radius: 22px;
+      border: none;
+      background-color: map-get($color, text-color-light);
+      font-family: map-get($fontfamily, description-font);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(20.83 / 16);
+      text-align: center;
+      color: map-get($color, brand-color-dark);
+      &__icon {
+        margin-left: 13px;
+      }
+      &:focus,
+      :hover {
+        background-color: #ecebeb;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-property: background-color;
+      }
+    }
+    &__icon {
+      &__box {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu-toggle {
+    display: none;
+  }
+  .hero-header {
+    &__nav {
+      padding-left: 46px;
+      padding-right: 115px;
+      padding-top: 37px;
+    }
+    &__nav-list {
+      display: flex;
+      &__link {
+        font-family: map-get($fontfamily, description-font);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: calc(20.83 / 14);
+        cursor: pointer;
+      }
+      &__item {
+        color: map-get($color, text-color-light);
+        &:focus,
+        :hover {
+          color: map-get($color, brand-color-dark);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 250ms;
+          transition-property: color;
+        }
+        &:not(:last-child) {
+          padding-right: 35px;
+        }
+      }
+    }
   }
 }
