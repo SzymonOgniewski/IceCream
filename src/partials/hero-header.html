@@ -1,30 +1,32 @@
 <!-- Szymon -->
-<section class="hero-header">
+<section class="hero-header" id="hero-header">
   <div class="container">
     <div>
       <nav class="hero-header__nav">
         <div class="hero-header__logo">
-          <img
-            src="/images/logo/logo@x1.png"
-            srcset="/images/logo/logo@2x.png 2x"
-            alt="IceCream brand logo"
-          />
+          <a href="#hero-header">
+            <img
+              src="/images/logo/logo@x1.png"
+              srcset="/images/logo/logo@2x.png 2x"
+              alt="IceCream brand logo"
+            />
+          </a>
         </div>
         <ul class="hero-header__nav-list">
           <li class="hero-header__nav-list__item">
-            <a class="hero-header__nav-list__link">Home</a>
+            <a class="hero-header__nav-list__link" href="#hero-header">Home</a>
           </li>
           <li class="hero-header__nav-list__item">
-            <a class="hero-header__nav-list__link">About us</a>
+            <a class="hero-header__nav-list__link" href="#customer-reviews">About us</a>
           </li>
           <li class="hero-header__nav-list__item">
-            <a class="hero-header__nav-list__link">How it's made</a>
+            <a class="hero-header__nav-list__link" href="#about">How it's made</a>
           </li>
           <li class="hero-header__nav-list__item">
-            <a class="hero-header__nav-list__link">Our products</a>
+            <a class="hero-header__nav-list__link" href="#products">Our products</a>
           </li>
           <li class="hero-header__nav-list__item">
-            <a class="hero-header__nav-list__link">Contact</a>
+            <a class="hero-header__nav-list__link" href="#contacts" A>Contact</a>
           </li>
         </ul>
         <div class="navigation__icon__box">
@@ -38,8 +40,13 @@
               <use href="/images/symbol-defs.svg#icon-Burger"></use>
             </svg>
           </button>
+          <button class="navigation__button" type="button">
+            Buy now
+            <svg class="navigation__button__icon"width="8px" height="10px">
+              <use href="/images/symbol-defs.svg#icon-buy-now"></use>
+            </svg>
+          </button>
         </div>
-        <button class="navigation__button" type="button">Buy now ></button>
       </nav>
 
       <div class="menu-container js-menu-container" id="mobile-menu">
@@ -60,19 +67,19 @@
           <div class="mobile-navigation">
             <ul class="mobile-navigation__list">
               <li class="mobile-navigation__list__item">
-                <a class="mobile-navigation__list__link">Home</a>
+                <a class="mobile-navigation__list__link" href="#hero-header">Home</a>
               </li>
               <li class="mobile-navigation__list__item">
-                <a class="mobile-navigation__list__link">About us</a>
+                <a class="mobile-navigation__list__link" href="#customer-reviews">About us</a>
               </li>
               <li class="mobile-navigation__list__item">
-                <a class="mobile-navigation__list__link">How it's made?</a>
+                <a class="mobile-navigation__list__link" href="#about">How it's made?</a>
               </li>
               <li class="mobile-navigation__list__item">
-                <a class="mobile-navigation__list__link">Our products</a>
+                <a class="mobile-navigation__list__link" href="#products">Our products</a>
               </li>
               <li class="mobile-navigation__list__item">
-                <a class="mobile-navigation__list__link">Contact</a>
+                <a class="mobile-navigation__list__link" href="#contacts">Contact</a>
               </li>
             </ul>
           </div>
