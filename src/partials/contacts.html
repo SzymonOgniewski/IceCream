@@ -2,7 +2,9 @@
   <h2 class="offscreen">Contacts</h2>
   <ul class="contacts__grid">
     <li class="contacts__item contacts-box">
-      <button type="button" class="contacts-box__type"><span>cafe</span></button>
+      <button type="button" class="contacts-box__type">
+        <span class="contacts-box__type-text">cafe</span>
+      </button>
       <article class="contacts-box__place">
         <p class="contacts-box__city">Chicago</p>
         <p class="contacts-box__description">
@@ -11,7 +13,7 @@
       </article>
       <article class="contacts-box__opening-hours">
         <p class="contacts-box__days">Monday - Friday</p>
-        <p class="contacts-box__hours">06:00 AM - 10:00 PM</p>
+        <p class="contacts-box__hours contacts-box__hours--first">06:00 AM - 10:00 PM</p>
         <p class="contacts-box__days">Saturday - Sunday</p>
         <p class="contacts-box__hours">08:00 AM - 16:00 PM</p>
       </article>
@@ -21,7 +23,9 @@
       </address>
     </li>
     <li class="contacts__item contacts-box">
-      <button type="button" class="contacts-box__type"><span>foodtruck</span></button>
+      <button type="button" class="contacts-box__type contacts-box__type--foodtruck">
+        <span class="contacts-box__type-text">foodtruck</span>
+      </button>
       <article class="contacts-box__place">
         <p class="contacts-box__city">Los Angeles</p>
         <p class="contacts-box__description">
@@ -30,17 +34,19 @@
       </article>
       <article class="contacts-box__opening-hours">
         <p class="contacts-box__days">Monday - Friday</p>
-        <p class="contacts-box__hours">06:00 AM - 10:00 PM</p>
+        <p class="contacts-box__hours contacts-box__hours--first">06:00 AM - 10:00 PM</p>
         <p class="contacts-box__days">Saturday - Sunday</p>
         <p class="contacts-box__hours">08:00 AM - 16:00 PM</p>
       </article>
-      <address>
+      <address class="contacts-box__address">
         <a href="tel:+61(0)383766284" class="contacts-box__link">+61(0) 383 766 284</a>
         <a href="mailto:noreply@envato.com" class="contacts-box__link">noreply@envato.com</a>
       </address>
     </li>
     <li class="contacts__item contacts-box">
-      <button type="button" class="contacts-box__type"><span>cafe</span></button>
+      <button type="button" class="contacts-box__type">
+        <span class="contacts-box__type-text">cafe</span>
+      </button>
       <article class="contacts-box__place">
         <p class="contacts-box__city">New York</p>
         <p class="contacts-box__description">
@@ -49,7 +55,7 @@
       </article>
       <article class="contacts-box__opening-hours">
         <p class="contacts-box__days">Monday - Friday</p>
-        <p class="contacts-box__hours">06:00 AM - 10:00 PM</p>
+        <p class="contacts-box__hours contacts-box__hours--first">06:00 AM - 10:00 PM</p>
         <p class="contacts-box__days">Saturday - Sunday</p>
         <p class="contacts-box__hours">08:00 AM - 16:00 PM</p>
       </article>
@@ -62,12 +68,22 @@
   <ul class="buttons-grid">
     <li class="buttons-grid__item">
       <button class="buttons-grid__button buttons-grid__button--locations">
-        <span class="buttons-grid__button-text">Our Locations</span>
+        <span class="buttons-grid__button-text buttons-grid__button-text--locations"
+          >Our Locations</span
+        >
+        <svg class="buttons-grid__icon buttons-grid__icon--first">
+          <use href="../images/symbol-defs.svg#icon-Vector-1"></use>
+        </svg>
       </button>
     </li>
     <li class="buttons-grid__item">
       <button class="buttons-grid__button buttons-grid__button--franchise">
-        <span class="buttons-grid__button-text">Franchise</span>
+        <span class="buttons-grid__button-text buttons-grid__button-text--franchise"
+          >Franchise</span
+        >
+        <svg class="buttons-grid__icon buttons-grid__icon--second">
+          <use href="../images/symbol-defs.svg#icon-Vector-1"></use>
+        </svg>
       </button>
     </li>
   </ul>
