@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 767px) {
+  .navigation__button {
+    display: none;
+  }
+  .navigation__icon__box {
+    align-self: center;
+  }
+  .hero-header__nav {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  .hero-header__logo {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero-header__nav-list {
+    display: none;
+  }
+}
+.menu-toggle {
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffb8ca;
+  border-radius: 50%;
+  outline: none;
+}
+.menu-toggle:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill;
+}
+
+.hero-header {
+  background-color: #ffb8ca;
+  background-image: url(/images/background-circle/circle@x1.png);
+  background-size: 346px 344px;
+  background-repeat: no-repeat;
+  background-position-x: 36px;
+  background-position-y: 83px;
+}
+.hero-header__content {
+  position: relative;
+}
+.hero-header__background-circle {
+  fill: #ffa5ba;
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */
