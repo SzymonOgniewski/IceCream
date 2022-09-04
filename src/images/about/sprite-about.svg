@@ -5,5 +5,8 @@
             <path fill="none" stroke="#d41443" style="stroke:var(--color1, #d41443)" stroke-linejoin="round"
                 stroke-linecap="round" stroke-width="6.4" d="M5.172 3.2 19.341 16 5.172 28.8" />
         </symbol>
+        <symbol id="x" viewBox="0 0 32 32">
+      <path d="m26.667 7.303-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"/>
+    </symbol>
     </defs>
 </svg>
