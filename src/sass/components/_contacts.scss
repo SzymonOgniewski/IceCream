@@ -4,6 +4,7 @@
 }
 .contacts {
   max-width: 480px;
+  margin: 0 auto;
   background-color: rgba(255, 255, 255, 1);
   background-image: linear-gradient(
     180deg,
@@ -129,13 +130,16 @@
     display: block;
     position: relative;
     border: none;
-    width: 50.31%;
+    height: 44px;
+    
     border-radius: 22px;
     &--locations {
         background-color: getColor('brand-color-dark');
+        width: 50.31%;
     }
     &--franchise {
         background-color: getColor('text-color-light');
+        width: 50.31%;
     }
 }
 &__button-text {
@@ -150,7 +154,7 @@
     }
     &--franchise {
         color: getColor('brand-color-dark');
-        padding-right: 8px;
+        padding-right: 13.17px;
     }
 
 }
@@ -189,82 +193,95 @@
             align-items: flex-start;
         }
         
-}
-.contacts-box {
-    
-    width: 28.5%;
-    
-    padding-left: 31px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    &__type {
-        
-        width: 33.18%;
-        
-        border-radius: 6px;
-        &--foodtruck {
-            
-            width: 62.72%;
+    }
+    .contacts-box {
+        width: 28.5%;
+        padding-left: 31px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &__type {
+            width: 33.18%;
+            border-radius: 6px;
+            &--foodtruck { 
+                width: 62.72%;
+            }
+        }
+        &__type-text {
+            font-size: 16px;
+        }
+    &__place {
+        margin-top: 30px;
+        width: 71.36%;
+        padding-bottom: 30px;
+    }
+    &__city {
+        font-size: 14px;
+        padding-bottom: 14px;
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 166%;
+    }
+    &__opening-hours {
+        margin-top: 30px;
+        width: 71.36%;
+        padding-bottom: 30px;
+    }
+    &__days {
+        font-size: 14px;
+    }
+    &__hours {
+        font-size: 14px;
+        &--first {
+            padding-bottom: 16px;
         }
     }
-    &__type-text {
-        
-        font-size: 16px;
-        
-
+    &__address {
+        margin-top: 30px;
+        width: 71.36%;
     }
-&__place {
-    margin-top: 30px;
-    width: 71.36%;
-    padding-bottom: 30px;
-    
-}
-&__city {
-    
-    font-size: 14px;
-    
-    padding-bottom: 14px;
-}
-&__description {
-    
-    font-size: 14px;
-    line-height: 166%;
-    
-}
-&__opening-hours {
-    margin-top: 30px;
-    width: 81.36%;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #E1E1E1; 
-}
-&__days {
-    font-family: getFF('description-font');
-    color: getColor('text-color-dark');
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 186%;
-}
-&__hours {
-     font-family: getFF('description-font');
-    color: getColor('brand-color-light');
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 186%;
-    &--first {
-        padding-bottom: 10px;
+    &__link {
+        
+        font-size: 14px;
+        line-height: 183%;
     }
-}
-&__address {
-    margin-top: 25px;
-    width: 81.36%;
-}
-&__link {
-    display: block;
-    font-family: getFF('description-font');
-    color: getColor('text-color-medium');
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 150%;
-}
-}
+    }
+    .buttons-grid {
+    margin-top: 81px;
+    margin-bottom: 158px;
+    flex-direction: row;
+    gap: 14.5px;
+    justify-content: center;
+    align-items: flex-start;
+    &__item {
+        flex-basis: calc((100% - 29px) / 2);
+    }
+    &__button {
+        &--locations {
+            
+            width: 24.8%;
+        }
+        &--franchise {
+            width: 22.54%;
+        }
+    }
+    &__button-text {  
+        &--locations {
+            padding-right: 13.4px;
+        }
+    } 
+    &__icon {
+        position: absolute;
+        &--first {
+            width: 4.28px;
+            right: 34.77px;
+            
+        }
+        &--second {
+            top: 19px;
+            right: 38.63px;
+            
+        }
+    }
+    }
 }
