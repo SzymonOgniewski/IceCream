@@ -4,7 +4,7 @@
 }
 .contacts {
   max-width: 480px;
-  margin: 0 auto;
+  margin: 86px 50px 0 50px;
   background-color: rgba(255, 255, 255, 1);
   background-image: linear-gradient(
     180deg,
@@ -13,13 +13,13 @@
     rgba(255, 245, 246, 1) 5.3%,
     rgba(255, 245, 246, 1) 100%
   );
-  margin-top: 86px;
   &__grid {
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: flex-start;
     align-items: center;
+    list-style-type: none;
   }
   &__item {
     flex-basis: calc((100% - 40px) / 3);
@@ -38,12 +38,12 @@
     display: block;
     border: none;
     height: 16px;
-    width: 36.36%;
+    width: 80px;
     background-color: #f0d1a5;
     border-radius: 4px;
     &--foodtruck {
       background-color: #c2e297;
-      width: 59.09%;
+      width: 130px;
     }
   }
   &__type-text {
@@ -113,17 +113,19 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 150%;
+    font-style: normal;
+    text-decoration: none;
   }
 }
 
 .buttons-grid {
-  margin-top: 54px;
-  margin-bottom: 113px;
+  margin: 54px auto 113px auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: flex-start;
   align-items: center;
+  list-style-type: none;
   &__item {
     flex-basis: calc((100% - 20px) / 2);
   }
@@ -136,11 +138,11 @@
     border-radius: 22px;
     &--locations {
       background-color: getColor('brand-color-dark');
-      width: 50.31%;
+      width: 161.45px;
     }
     &--franchise {
       background-color: getColor('text-color-light');
-      width: 50.31%;
+      width: 161px;
     }
   }
   &__button-text {
@@ -179,6 +181,7 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts {
     max-width: 768px;
+    margin: 119px 36px 0px 36px;
     background-image: linear-gradient(
       180deg,
       rgba(255, 255, 255, 1) 0%,
@@ -186,7 +189,6 @@
       rgba(255, 245, 246, 1) 9.4%,
       rgba(255, 245, 246, 1) 100%
     );
-    margin-top: 119px;
     &__grid {
       flex-direction: row;
       justify-content: center;
@@ -199,11 +201,11 @@
     padding-top: 50px;
     padding-bottom: 50px;
     &__type {
-      width: 33.18%;
+      width: 73px;
       height: 28px;
       border-radius: 6px;
       &--foodtruck {
-        width: 62.72%;
+        width: 138px;
       }
     }
     &__type-text {
@@ -257,10 +259,10 @@
     }
     &__button {
       &--locations {
-        width: 24.8%;
+        width: 191.45px;
       }
       &--franchise {
-        width: 22.54%;
+        width: 174.05px;
       }
     }
     &__button-text {
@@ -284,6 +286,7 @@
 @media screen and (min-width: 1280px) {
   .contacts {
     max-width: 1280px;
+    margin: 132px 115px 0 115px;
     background-image: linear-gradient(
       180deg,
       rgba(255, 255, 255, 1) 0%,
@@ -291,7 +294,6 @@
       rgba(255, 245, 246, 1) 12%,
       rgba(255, 245, 246, 1) 100%
     );
-    margin-top: 132px;
     &__grid {
       flex-direction: row;
       gap: 30px;
@@ -309,11 +311,11 @@
     padding-top: 51px;
     padding-bottom: 62px;
     &__type {
-      width: 22.12%;
+      width: 73px;
       height: 28px;
       border-radius: 6px;
       &--foodtruck {
-        width: 41.81%;
+        width: 138px;
       }
     }
     &__type-text {
@@ -341,7 +343,6 @@
     }
     &__hours {
       font-size: 16px;
-
       &--first {
         padding-bottom: 15px;
       }
@@ -367,10 +368,10 @@
     }
     &__button {
       &--locations {
-        width: 15.47%;
+        width: 198px;
       }
       &--franchise {
-        width: 14.06%;
+        width: 180px;
       }
     }
     &__button-text {
@@ -384,12 +385,10 @@
     &__icon {
       &--first {
         width: 4.43px;
-
         right: 35.96px;
       }
       &--second {
         width: 4.43px;
-
         right: 39.96px;
       }
     }
