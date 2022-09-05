@@ -3,8 +3,8 @@
   background: getColor('text-color-light');
   background: linear-gradient(
     0deg,
-    getColor('text-color-light') 9.6%,
-    getColor('background-color-medium') 9.6%
+    getColor('text-color-light') 75px,
+    getColor('background-color-medium') 75px
   );
   display: block;
   width: 100%;
@@ -50,8 +50,8 @@
     background: getColor('text-color-light');
     background: linear-gradient(
       0deg,
-      getColor('text-color-light') 158px,
-      getColor('background-color-medium') 158px
+      getColor('text-color-light') 161px,
+      getColor('background-color-medium') 161px
     );
   }
   .advantage__list {
@@ -83,8 +83,8 @@
     background: getColor('text-color-light');
     background: linear-gradient(
       0deg,
-      getColor('text-color-light') 259px,
-      getColor('background-color-medium') 259px
+      getColor('text-color-light') 262px,
+      getColor('background-color-medium') 262px
     );
     padding-top: 39px;
 
@@ -94,7 +94,7 @@
     display: flex;
     padding-left: 115px;
 
-    margin-bottom: 139px;
+    padding-bottom: 139px;
     gap: 30px;
     padding-right: 115px;
   }
