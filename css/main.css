@@ -45,7 +45,7 @@ a {
   background-color: #e17992;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  z-index: 999;
+  z-index: 100;
 }
 
 .menu-container.is-open {
@@ -240,10 +240,10 @@ a {
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms linear;
   transform: scale(1);
+  z-index: 999;
 }
 
 .header-modal {
-  z-index: 999;
   position: absolute;
   background-color: #ffb8ca;
   transform: translate(-50%, -50%);
@@ -400,6 +400,12 @@ a {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .header-modal {
+    width: 100%;
+    max-width: 480px;
+  }
+}
 .about {
   width: 100%;
   padding-top: 80px;

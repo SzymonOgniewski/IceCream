@@ -12,9 +12,9 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms linear;
   transform: scale(1);
+  z-index: 999;
 }
 .header-modal {
-  z-index: 999;
   position: absolute;
   background-color: map-get($color, background-color-dark);
   transform: translate(-50%, -50%);
@@ -153,4 +153,10 @@
   text-decoration: underline;
   cursor: pointer;
   color: #2196f3;
+}
+@media screen and (max-width: 767px) {
+  .header-modal {
+    width: 100%;
+    max-width: 480px;
+  }
 }

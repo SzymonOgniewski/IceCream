@@ -48,9 +48,13 @@
           </button>
         </div>
       </nav>
-      <div class="backdrop is-hidden" header-modal>
+      <div class="backdrop is-hidden" header-modal header-mobile-modal>
         <div class="header-modal">
           <button class="header-modal__close-btn" header-modal-close>
+            <svg width="14px" height="14px">
+              <use href="/images/symbol-defs.svg#icon-close"></use>
+            </svg></button
+          ><button class="header-modal__close-btn" header-mobile-modal-close>
             <svg width="14px" height="14px">
               <use href="/images/symbol-defs.svg#icon-close"></use>
             </svg>
@@ -133,7 +137,7 @@
       <div class="menu-container js-menu-container" id="mobile-menu">
         <div class="menu-container__box">
           <div class="mobile-navigation__button-box">
-            <button class="mobile-navigation__button" type="button" mobile-header-modal-open>
+            <button class="mobile-navigation__button" type="button" header-mobile-modal-open>
               <span class="mobile-navigation__button__text">Buy now</span>
               <svg width="8px" height="10px">
                 <use href="/images/symbol-defs.svg#icon-buy-now"></use>
