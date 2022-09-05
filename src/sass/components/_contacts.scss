@@ -3,8 +3,7 @@
   left: -1000em;
 }
 .contacts {
-  max-width: 480px;
-  margin: 86px 50px 0 50px;
+  margin-top: 86px;
   background-color: rgba(255, 255, 255, 1);
   background-image: linear-gradient(
     180deg,
@@ -37,8 +36,8 @@
   &__type {
     display: block;
     border: none;
-    height: 16px;
     width: 80px;
+    height: auto;
     background-color: #f0d1a5;
     border-radius: 4px;
     &--foodtruck {
@@ -134,6 +133,7 @@
     position: relative;
     border: none;
     height: 44px;
+    cursor: pointer;
 
     border-radius: 22px;
     &--locations {
@@ -143,6 +143,10 @@
     &--franchise {
       background-color: getColor('text-color-light');
       width: 161px;
+      &:hover,
+      &:focus {
+        background-color: #ecebeb;
+      }
     }
   }
   &__button-text {
@@ -180,8 +184,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts {
-    max-width: 768px;
-    margin: 119px 36px 0px 36px;
+    margin-top: 119px;
     background-image: linear-gradient(
       180deg,
       rgba(255, 255, 255, 1) 0%,
@@ -190,6 +193,8 @@
       rgba(255, 245, 246, 1) 100%
     );
     &__grid {
+      margin-left: 36px;
+      margin-right: 36px;
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
@@ -202,7 +207,6 @@
     padding-bottom: 50px;
     &__type {
       width: 73px;
-      height: 28px;
       border-radius: 6px;
       &--foodtruck {
         width: 138px;
@@ -248,7 +252,10 @@
     }
   }
   .buttons-grid {
-    margin: 81px auto 158px auto;
+    margin-top: 81px;
+    margin-bottom: 158px;
+    margin-right: 196px;
+    margin-left: 196px;
     flex-direction: row;
     gap: 14.5px;
     justify-content: center;
@@ -284,7 +291,7 @@
 }
 @media screen and (min-width: 1280px) {
   .contacts {
-    max-width: 1280px;
+    margin-top: 132px;
     margin: 132px 115px 0 115px;
     background-image: linear-gradient(
       180deg,
@@ -294,6 +301,8 @@
       rgba(255, 245, 246, 1) 100%
     );
     &__grid {
+      margin-left: 115px;
+      margin-right: 115px;
       flex-direction: row;
       gap: 30px;
       justify-content: center;
@@ -304,14 +313,14 @@
     }
   }
   .contacts-box {
-    width: 25.78%;
+    width: 330px;
 
     padding-left: 43px;
     padding-top: 51px;
     padding-bottom: 62px;
     &__type {
       width: 73px;
-      height: 28px;
+
       border-radius: 6px;
       &--foodtruck {
         width: 138px;
@@ -356,7 +365,7 @@
     }
   }
   .buttons-grid {
-    margin: 86px auto 165px auto;
+    margin: 86px 444px 165px 443px;
     flex-direction: row;
     gap: 15px;
     justify-content: center;
