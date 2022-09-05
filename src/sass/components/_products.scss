@@ -233,6 +233,7 @@ background-color: #ffb8ca;
     font-weight: 700;
     text-align: center;
     color: getColor(text-color-light);
+    font-family: getFF(description-font);
 
     @media screen and (min-width: 768px) {
         margin-bottom: 40px;
