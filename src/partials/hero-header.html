@@ -51,27 +51,35 @@
       <div class="backdrop is-hidden" header-modal>
         <div class="header-modal">
           <button class="header-modal__close-btn" header-modal-close>
-            <svg class="header-modal__close-btn--icon" width="14px" height="14px">
+            <svg width="14px" height="14px">
               <use href="/images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
           <form name="form-input-data">
-            <fieldset class="">
-              <legend class="">Zostaw swoje dane w formularzu poniżej</legend>
-              <ul>
-                <li class="">
-                  <label class=""
-                    ><span class="">Imie</span>
-
-                    <input required class="" name="name" type="text" maxlength="20" minlength="3" />
-                  </label>
-                </li>
-                <li class="">
-                  <label class=""
-                    ><span class="">Telefon</span>
+            <fieldset class="header-modal-form">
+              <legend class="header-modal-form__header">
+                Zostaw swoje dane w formularzu poniżej
+              </legend>
+              <ul class="header-modal-form__list">
+                <li class="header-modal-form__list-item">
+                  <label class="header-modal-form__input-name"
+                    ><span class="header-modal-form__textarea-name">Imie</span>
                     <input
                       required
-                      class=""
+                      class="header-modal-form__input-textarea"
+                      name="name"
+                      type="text"
+                      maxlength="20"
+                      minlength="3"
+                    />
+                  </label>
+                </li>
+                <li class="header-modal-form__list-item">
+                  <label class="header-modal-form__input-name"
+                    ><span class="header-modal-form__textarea-name">Telefon</span>
+                    <input
+                      required
+                      class="header-modal-form__input-textarea"
                       name="tel"
                       type="tel"
                       pattern="[0-9]{9}"
@@ -79,35 +87,44 @@
                     />
                   </label>
                 </li>
-                <li class="">
-                  <label class=""
-                    ><span class="">Email</span> <input required class="" name="email" type="email"
+                <li class="header-modal-form__list-item">
+                  <label class="header-modal-form__input-name"
+                    ><span class="header-modal-form__textarea-name">Email</span>
+                    <input
+                      required
+                      class="header-modal-form__input-textarea"
+                      name="email"
+                      type="email"
                   /></label>
                 </li>
-                <li class="">
-                  <label class="">
-                    <span class="">Komentarz</span>
-                    <textarea class="" name="comment" placeholder="Wprowadź tekst"></textarea>
+                <li class="header-modal-form__list-item">
+                  <label class="header-modal-form__input-name">
+                    <span class="header-modal-form__textarea-name">Komentarz</span>
+                    <textarea
+                      class="header-modal-form__commentarea"
+                      name="comment"
+                      placeholder="Wprowadź tekst"
+                    ></textarea>
                   </label>
                 </li>
               </ul>
-              <label class="">
-                <span class=""
-                  >Oświadczam iż akceptuję
-                  <a href="" class="">Regulamin</a>
-                  <span>i</span>
-                  <a href="" class="">Politykę Prywatności</a><span>.</span></span
-                >
+              <label class="header-modal-form__checkbox">
                 <input
                   required
-                  class=""
+                  class="checkbox"
                   type="checkbox"
                   name="privacy-policy"
                   value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
                 />
+                <span class=""
+                  >Oświadczam iż akceptuję
+                  <a href="" class="checkbox-link">Regulamin</a>
+                  <span>i</span>
+                  <a href="" class="checkbox-link">Politykę Prywatności</a><span>.</span></span
+                >
               </label>
-              <div class="">
-                <button type="submit" class="">Wyślij</button>
+              <div class="header-modal-form__submit-button-box">
+                <button type="submit" class="header-modal-form__submit-button">Wyślij</button>
               </div>
             </fieldset>
           </form>
@@ -116,7 +133,7 @@
       <div class="menu-container js-menu-container" id="mobile-menu">
         <div class="menu-container__box">
           <div class="mobile-navigation__button-box">
-            <button class="mobile-navigation__button" type="button" header-modal-open>
+            <button class="mobile-navigation__button" type="button" mobile-header-modal-open>
               <span class="mobile-navigation__button__text">Buy now</span>
               <svg width="8px" height="10px">
                 <use href="/images/symbol-defs.svg#icon-buy-now"></use>
