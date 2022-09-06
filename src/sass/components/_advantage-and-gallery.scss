@@ -1,0 +1,117 @@
+.advantage {
+  padding-top: 39px;
+  background: getColor('text-color-light');
+  background: linear-gradient(
+    0deg,
+    getColor('text-color-light') 75px,
+    getColor('background-color-medium') 75px
+  );
+  display: block;
+  width: 100%;
+}
+.advantage__list {
+  display: block;
+  padding-left: 20px;
+  padding-bottom: 97px;
+  padding-right: 70px;
+}
+.advantage__item {
+  margin-bottom: 38px;
+}
+.advantage__item:last-child {
+  margin-bottom: 0;
+}
+.advantage__symbol {
+  margin-bottom: 16px;
+}
+.advantage__caption {
+  font-family: getFF('brand-font');
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: getColor('brand-color-dark');
+  font-size: 36px;
+}
+.advantage__description {
+  font-weight: 700;
+  font-family: getFF('description-font');
+  color: getColor('text-color-dark');
+  font-size: 12px;
+  line-height: 1.3;
+  width: 230px;
+}
+.advantage__img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .advantage {
+    padding-top: 66px;
+    background: getColor('text-color-light');
+    background: linear-gradient(
+      0deg,
+      getColor('text-color-light') 161px,
+      getColor('background-color-medium') 161px
+    );
+  }
+  .advantage__list {
+    display: flex;
+    padding-left: 36px;
+
+    padding-bottom: 140px;
+    gap: 60px;
+    padding-right: 76px;
+  }
+  .advantage__item {
+    margin-bottom: 0px;
+  }
+  .advantage__symbol {
+    margin-bottom: 36px;
+  }
+  .advantage__caption {
+    font-size: 48px;
+    margin-bottom: 13px;
+  }
+  .advantage__description {
+    font-size: 14px;
+    line-height: 1.7;
+    width: 180px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantage {
+    background: getColor('text-color-light');
+    background: linear-gradient(
+      0deg,
+      getColor('text-color-light') 262px,
+      getColor('background-color-medium') 262px
+    );
+    padding-top: 39px;
+
+    padding-bottom: 0;
+  }
+  .advantage__list {
+    display: flex;
+    padding-left: 115px;
+
+    padding-bottom: 139px;
+    gap: 30px;
+    padding-right: 115px;
+  }
+  .advantage__item {
+    margin-bottom: 0px;
+  }
+  .advantage__symbol {
+    margin-bottom: 40px;
+  }
+  .advantage__caption {
+    font-size: 58px;
+    margin-bottom: 15px;
+  }
+  .advantage__description {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+    width: 330px;
+  }
+}
