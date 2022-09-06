@@ -126,21 +126,21 @@
 background-color: #ffb8ca;
 
     &::before {
-        background-image: url('../images/products/products-1-mobile.png');
+        background-image: url('/images/products/products-1-mobile.png');
 
     @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('../images/products/products-1-mobile@2x.png');
+            background-image: url('/images/products/products-1-mobile@2x.png');
         }
 
     @media screen and (min-width: 1280px) {
-            background-image: url('../images/products/products-1-desktop.png');
+            background-image: url('/images/products/products-1-desktop.png');
 
     @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-                background-image: url('../images/products/products-1-desktop@2x.png');
+                background-image: url('/images/products/products-1-desktop@2x.png');
             }
      }
     }
@@ -150,21 +150,21 @@ background-color: #ffb8ca;
     background-color: #f0d1a5;
 
     &::before {
-        background-image: url('../images/products/products-2-mobile.png');
+        background-image: url('/images/products/products-2-mobile.png');
 
         @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            background-image: url('../images/products/products-2-mobile@2x.png');
+            background-image: url('/images/products/products-2-mobile@2x.png');
         }
 
         @media screen and (min-width: 1280px) {
-            background-image: url('../images/products/products-2-desktop.png');
+            background-image: url('/images/products/products-2-desktop.png');
 
             @media screen and (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                background-image: url('../images/products/products-2-desktop@2x.png');
+                background-image: url('/images/products/products-2-desktop@2x.png');
             }
             }
         }
@@ -175,21 +175,21 @@ background-color: #ffb8ca;
     background-color: #c2e297;
 
     &::before {
-        background-image: url('../images/products/products-3-mobile.png');
+        background-image: url('/images/products/products-3-mobile.png');
 
         @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            background-image: url('../images/products/products-3-mobile@2x.png');
+            background-image: url('/images/products/products-3-mobile@2x.png');
         }
 
         @media screen and (min-width: 1280px) {
-            background-image: url('../images/products/products-3-desktop.png');
+            background-image: url('/images/products/products-3-desktop.png');
 
         @media screen and (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                background-image: url('../images/products/products-3-desktop@2x.png');
+                background-image: url('/images/products/products-3-desktop@2x.png');
             }
         }
     }
@@ -213,13 +213,13 @@ background-color: #ffb8ca;
     display: block;
     width: 26px;
     height: 6px;
-    background-image: url('../images/products/points.png');
+    background-image: url('/images/products/points.png');
     background-size: cover;
 
     @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('../images/products/points@2x.png');
+        background-image: url('/images/products/points@2x.png');
     }
 
     @media screen and (min-width: 1280px) {
