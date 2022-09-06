@@ -1,23 +1,23 @@
 @media screen and (max-width: 767px) {
   .hero-header {
     background-color: map-get($color, 'background-color-dark');
-    background-image: url(/images/background-circle/circle@x1.png);
-    background-size: 346px 344px;
-    background-repeat: no-repeat;
-    background-position-x: 36px;
-    background-position-y: 83px;
+    //background-image: url(/images/background-circle/circle@x1.png);
+    //background-size: 346px 344px;
+    //background-repeat: no-repeat;
+    //background-position-x: 36px;
+    //background-position-y: 83px;
 
     &__background-circle {
-      fill: map-get($color, 'brand-color-light');
+      //fill: map-get($color, 'brand-color-light');
     }
   }
 }
 
 .hero-header {
   background-color: map-get($color, 'background-color-dark');
-  // background-image: url(/images/background-circle/circle@x1.png);
-  // background-size: 346px 344px;
-  // background-repeat: no-repeat;
-  // background-position-x: 36px;
-  // background-position-y: 83px;
+  //background-image: url(/images/background-circle/circle@x1.png);
+  //background-size: 346px 344px;
+  //background-repeat: no-repeat;
+  //background-position-x: 36px;
+  //background-position-y: 83px;
 }
