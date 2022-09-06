@@ -772,10 +772,9 @@ a {
 
 .advantage {
   padding-top: 39px;
-  background: #ffffff;
-  background: linear-gradient(0deg, #ffffff 75px, #fff5f6 75px);
   display: block;
   width: 100%;
+  background: #ffffff;
 }
 
 .advantage__list {
@@ -820,10 +819,14 @@ a {
   height: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .advantage {
+    background: linear-gradient(0deg, #ffffff 114px, #fff5f6 114px);
+  }
+}
 @media screen and (min-width: 768px) {
   .advantage {
     padding-top: 66px;
-    background: #ffffff;
     background: linear-gradient(0deg, #ffffff 161px, #fff5f6 161px);
   }
   .advantage__list {
@@ -851,7 +854,6 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .advantage {
-    background: #ffffff;
     background: linear-gradient(0deg, #ffffff 262px, #fff5f6 262px);
     padding-top: 39px;
     padding-bottom: 0;
@@ -1389,10 +1391,9 @@ a {
 }
 .advantage {
   padding-top: 39px;
-  background: #ffffff;
-  background: linear-gradient(0deg, #ffffff 75px, #fff5f6 75px);
   display: block;
   width: 100%;
+  background: #ffffff;
 }
 
 .advantage__list {
@@ -1437,10 +1438,14 @@ a {
   height: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .advantage {
+    background: linear-gradient(0deg, #ffffff 114px, #fff5f6 114px);
+  }
+}
 @media screen and (min-width: 768px) {
   .advantage {
     padding-top: 66px;
-    background: #ffffff;
     background: linear-gradient(0deg, #ffffff 161px, #fff5f6 161px);
   }
   .advantage__list {
@@ -1468,7 +1473,6 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .advantage {
-    background: #ffffff;
     background: linear-gradient(0deg, #ffffff 262px, #fff5f6 262px);
     padding-top: 39px;
     padding-bottom: 0;
