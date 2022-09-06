@@ -1,2 +1,13 @@
-@import './example';
-@import './customer-reviews';
+@import './utils/vars.scss';
+@import './components/global-patterns';
+@import './components/container';
+@import './components/hero-header-mobile-menu';
+@import './components/hero-header-nav';
+@import './components/hero-header-section';
+@import'./components/banner';
+@import './components/products';
+@import './components/about';
+@import './components/advantage-and-gallery';
+@import './components/customer-reviews';
+@import './components/contacts';
+@import './components/advantage-and-gallery';
