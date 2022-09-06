@@ -1,30 +1,32 @@
 <!-- Szymon -->
-<section class="hero-header">
+<section class="hero-header" id="hero-header">
   <div class="container">
     <div>
       <nav class="hero-header__nav">
         <div class="hero-header__logo">
-          <img
-            src="/images/logo/logo@x1.png"
-            srcset="/images/logo/logo@2x.png 2x"
-            alt="IceCream brand logo"
-          />
+          <a href="#hero-header">
+            <img
+              src="/images/logo/logo@x1.png"
+              srcset="/images/logo/logo@2x.png 2x"
+              alt="IceCream brand logo"
+            />
+          </a>
         </div>
         <ul class="hero-header__nav-list">
           <li class="hero-header__nav-list__item">
-            <a class="hero-header__nav-list__link">Home</a>
+            <a class="hero-header__nav-list__link" href="#hero-header">Home</a>
           </li>
           <li class="hero-header__nav-list__item">
-            <a class="hero-header__nav-list__link">About us</a>
+            <a class="hero-header__nav-list__link" href="#customer-reviews">About us</a>
           </li>
           <li class="hero-header__nav-list__item">
-            <a class="hero-header__nav-list__link">How it's made</a>
+            <a class="hero-header__nav-list__link" href="#about">How it's made</a>
           </li>
           <li class="hero-header__nav-list__item">
-            <a class="hero-header__nav-list__link">Our products</a>
+            <a class="hero-header__nav-list__link" href="#products">Our products</a>
           </li>
           <li class="hero-header__nav-list__item">
-            <a class="hero-header__nav-list__link">Contact</a>
+            <a class="hero-header__nav-list__link" href="#contacts" A>Contact</a>
           </li>
         </ul>
         <div class="navigation__icon__box">
@@ -38,14 +40,100 @@
               <use href="/images/symbol-defs.svg#icon-Burger"></use>
             </svg>
           </button>
+          <button class="navigation__button" type="button" header-modal-open>
+            Buy now
+            <svg class="navigation__button__icon" width="8px" height="10px">
+              <use href="/images/symbol-defs.svg#icon-buy-now"></use>
+            </svg>
+          </button>
         </div>
-        <button class="navigation__button" type="button">Buy now ></button>
       </nav>
-
+      <div class="backdrop is-hidden" header-modal>
+        <div class="header-modal">
+          <button class="header-modal__close-btn" header-modal-close>
+            <svg width="14px" height="14px">
+              <use href="/images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <form name="form-input-data">
+            <fieldset class="header-modal-form">
+              <legend class="header-modal-form__header">
+                Zostaw swoje dane w formularzu poniżej
+              </legend>
+              <ul class="header-modal-form__list">
+                <li class="header-modal-form__list-item">
+                  <label class="header-modal-form__input-name"
+                    ><span class="header-modal-form__textarea-name">Imie</span>
+                    <input
+                      required
+                      class="header-modal-form__input-textarea"
+                      name="name"
+                      type="text"
+                      maxlength="20"
+                      minlength="3"
+                    />
+                  </label>
+                </li>
+                <li class="header-modal-form__list-item">
+                  <label class="header-modal-form__input-name"
+                    ><span class="header-modal-form__textarea-name">Telefon</span>
+                    <input
+                      required
+                      class="header-modal-form__input-textarea"
+                      name="tel"
+                      type="tel"
+                      pattern="[0-9]{9}"
+                      title="Prosze używać tylko liczb od 0 do 9"
+                    />
+                  </label>
+                </li>
+                <li class="header-modal-form__list-item">
+                  <label class="header-modal-form__input-name"
+                    ><span class="header-modal-form__textarea-name">Email</span>
+                    <input
+                      required
+                      class="header-modal-form__input-textarea"
+                      name="email"
+                      type="email"
+                  /></label>
+                </li>
+                <li class="header-modal-form__list-item">
+                  <label class="header-modal-form__input-name">
+                    <span class="header-modal-form__textarea-name">Komentarz</span>
+                    <textarea
+                      class="header-modal-form__commentarea"
+                      name="comment"
+                      placeholder="Wprowadź tekst"
+                    ></textarea>
+                  </label>
+                </li>
+              </ul>
+              <label class="header-modal-form__checkbox">
+                <input
+                  required
+                  class="checkbox"
+                  type="checkbox"
+                  name="privacy-policy"
+                  value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
+                />
+                <span class=""
+                  >Oświadczam iż akceptuję
+                  <a href="" class="checkbox-link">Regulamin</a>
+                  <span>i</span>
+                  <a href="" class="checkbox-link">Politykę Prywatności</a><span>.</span></span
+                >
+              </label>
+              <div class="header-modal-form__submit-button-box">
+                <button type="submit" class="header-modal-form__submit-button">Wyślij</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
       <div class="menu-container js-menu-container" id="mobile-menu">
         <div class="menu-container__box">
           <div class="mobile-navigation__button-box">
-            <button class="mobile-navigation__button" type="button">
+            <button class="mobile-navigation__button" type="button" mobile-header-modal-open>
               <span class="mobile-navigation__button__text">Buy now</span>
               <svg width="8px" height="10px">
                 <use href="/images/symbol-defs.svg#icon-buy-now"></use>
@@ -60,19 +148,19 @@
           <div class="mobile-navigation">
             <ul class="mobile-navigation__list">
               <li class="mobile-navigation__list__item">
-                <a class="mobile-navigation__list__link">Home</a>
+                <a class="mobile-navigation__list__link" href="#hero-header">Home</a>
               </li>
               <li class="mobile-navigation__list__item">
-                <a class="mobile-navigation__list__link">About us</a>
+                <a class="mobile-navigation__list__link" href="#customer-reviews">About us</a>
               </li>
               <li class="mobile-navigation__list__item">
-                <a class="mobile-navigation__list__link">How it's made?</a>
+                <a class="mobile-navigation__list__link" href="#about">How it's made?</a>
               </li>
               <li class="mobile-navigation__list__item">
-                <a class="mobile-navigation__list__link">Our products</a>
+                <a class="mobile-navigation__list__link" href="#products">Our products</a>
               </li>
               <li class="mobile-navigation__list__item">
-                <a class="mobile-navigation__list__link">Contact</a>
+                <a class="mobile-navigation__list__link" href="#contacts">Contact</a>
               </li>
             </ul>
           </div>
