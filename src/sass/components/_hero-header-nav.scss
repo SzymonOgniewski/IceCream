@@ -28,9 +28,10 @@
   margin-right: 20px;
   cursor: pointer;
   border: none;
-  background-color: map-get($color, 'background-color-dark');
+  background-color: transparent;
   border-radius: 50%;
   outline: none;
+  z-index: 50;
 }
 @media screen and (min-width: 768px) {
   .hero-header {
@@ -58,6 +59,7 @@
       line-height: calc(20.83 / 16);
       text-align: center;
       color: map-get($color, brand-color-dark);
+      z-index: 50;
       &__icon {
         margin-left: 13px;
       }
@@ -89,6 +91,7 @@
     }
     &__nav-list {
       display: flex;
+      z-index: 50;
       &__link {
         font-family: map-get($fontfamily, description-font);
         font-size: 16px;

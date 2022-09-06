@@ -133,7 +133,7 @@
       <div class="menu-container js-menu-container" id="mobile-menu">
         <div class="menu-container__box">
           <div class="mobile-navigation__button-box">
-            <button class="mobile-navigation__button" type="button" mobile-header-modal-open>
+            <button class="mobile-navigation__button" type="button" header-mobile-modal-open>
               <span class="mobile-navigation__button__text">Buy now</span>
               <svg width="8px" height="10px">
                 <use href="/images/symbol-defs.svg#icon-buy-now"></use>
@@ -174,18 +174,25 @@
         <li class="banner__item">
           <ul class="title-section banner__title-section">
             <li class="title-section__item">
-              <h1 class="title-section__text">ice cream made with <accent class="title-section__text--accent">passion</accent></h1>
+              <h1 class="title-section__text">
+                ice cream made with <accent class="title-section__text--accent">passion</accent>
+              </h1>
             </li>
             <li class="title-section__item">
               <ul class="title-section__buttons">
                 <li>
                   <a class="banner__link" href="#products">
-                    <button class="title-section__button title-section__button--left" type="button">Products</button>
+                    <button class="title-section__button title-section__button--left" type="button">
+                      Products
+                    </button>
                   </a>
                 </li>
                 <li>
                   <a class="banner__link" href="#howitsmade">
-                    <button class="title-section__button title-section__button--right" type="button">
+                    <button
+                      class="title-section__button title-section__button--right"
+                      type="button"
+                    >
                       How it's made?
                     </button>
                   </a>
@@ -201,7 +208,7 @@
                 <use href="/images/symbol-defs.svg#banner-icon-1"></use>
               </svg>
             </li>
-            <li class="icon-section__item">  
+            <li class="icon-section__item">
               <svg class="icon-section__icon icon-section__icon--down">
                 <use href="/images/symbol-defs.svg#banner-icon-2"></use>
               </svg>
@@ -212,10 +219,14 @@
           <ul class="description-section banner__description-section">
             <li class="description-section__item">
               <img
-              class="description-section__image"
-              src="/images/milk-tablet.png"
-              srcset="/images/milk-tablet@2x.png 2x, /images/milk-desktop.png 1x, /images/milk-desktop@2x.png 2x"
-              alt="A jug of milk with inscription bio eco"
+                class="description-section__image"
+                src="/images/milk-tablet.png"
+                srcset="
+                  /images/milk-tablet@2x.png  2x,
+                  /images/milk-desktop.png    1x,
+                  /images/milk-desktop@2x.png 2x
+                "
+                alt="A jug of milk with inscription bio eco"
               />
             </li>
             <li class="desription-section">
@@ -227,9 +238,14 @@
                   </p>
                 </li>
                 <li>
-                  <a href=""><button type="button" class="description-section__button">
-                  <img class="description-section__icon" src="/images/arrow-right-tablet.png" alt=">">
-                  </button></a>
+                  <a href=""
+                    ><button type="button" class="description-section__button">
+                      <img
+                        class="description-section__icon"
+                        src="/images/arrow-right-tablet.png"
+                        alt=">"
+                      /></button
+                  ></a>
                 </li>
               </ul>
             </li>
@@ -240,14 +256,29 @@
             <img
               class="banner__image"
               src="/images/girl-tablet.png"
-              srcset="/images/girl-tablet@2x.png 2x, /images/girl-desktop.png 1x, /images/girl-desktop@2x.png 2x"
+              srcset="
+                /images/girl-tablet@2x.png  2x,
+                /images/girl-desktop.png    1x,
+                /images/girl-desktop@2x.png 2x
+              "
               alt="girl with sunglasses wearing blue swimsuit licking ice-cream cone and comic cloud with insciption soooooo tasty!"
             />
           </div>
         </li>
       </ul>
       <div class="background">
-        <img class="background__background-image" src="/images/cone-mobile.png" srcset="/images/cone-mobile@2x.png, /images/cone-tablet.png 1x, /images/cone-tablet@2x.png 2x, /images/cone-desktop.png 1x, /images/cone-desktop@2x.png 2x" alt="ice-cream cone" />
+        <img
+          class="background__background-image"
+          src="/images/cone-mobile.png"
+          srcset="
+            /images/cone-mobile@2x.png,
+            /images/cone-tablet.png     1x,
+            /images/cone-tablet@2x.png  2x,
+            /images/cone-desktop.png    1x,
+            /images/cone-desktop@2x.png 2x
+          "
+          alt="ice-cream cone"
+        />
       </div>
     </div>
     <!--Natalia-->
