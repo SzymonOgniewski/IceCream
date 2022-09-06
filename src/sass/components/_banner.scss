@@ -6,7 +6,7 @@
     position:absolute;
     top:83px;
     right:0px;
-    min-width:284px;
+    width:88.75%;
     
 
     &__background-image {
@@ -112,10 +112,15 @@
 @media screen and (min-width:768px){
     .background{
         height:368px;
-        width:324px;
+        width:768px;
         top:35px;
         background-size:324px 322px;
-        left:39.97%;
+        left:0%;
+        padding-right:137px;
+        padding-left:307px;
+        background-position-x:307px;
+        margin:auto;
+    
 
         &__background-image{
             margin-top:32px;
@@ -264,14 +269,17 @@
 @media screen and (min-width:1280px){
     .background {
         height: 613px;
-        width: 538px;
+        width: 1200px;
         top: 52px;
         background-size: 538px 538px;
-        left: 37.11%;
+        background-position-x:435px;
+        padding-left:554px;
+        padding-right:410px;
+
     
         &__background-image {
             margin-top: 56px;
-            margin-left: 119px;
+            margin-left:0px;
             width: 236px;
             height: 557px;
     
