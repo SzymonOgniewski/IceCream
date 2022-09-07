@@ -411,13 +411,15 @@ a {
   background-repeat: no-repeat;
   position: absolute;
   top: 83px;
-  left: 11.25%;
-  width: 382px;
+  right: 0px;
+  width: 88.75%;
 }
 .background__background-image {
   margin-top: 9px;
   margin-left: 81px;
   z-index: 1;
+  width: 171px;
+  height: 410px;
 }
 
 .title-section {
@@ -447,6 +449,7 @@ a {
 .title-section__buttons {
   display: flex;
   flex-direction: row;
+  padding-bottom: 157px;
 }
 .title-section__button {
   border-radius: 20px;
@@ -458,7 +461,6 @@ a {
   line-height: 10px;
   height: 24px;
   color: #d41443;
-  margin-bottom: 160px;
   cursor: pointer;
 }
 .title-section__button--left {
@@ -499,9 +501,13 @@ a {
   .background {
     height: 368px;
     width: 768px;
-    top: 31px;
+    top: 35px;
     background-size: 324px 322px;
-    left: 39.97%;
+    left: 0%;
+    padding-right: 137px;
+    padding-left: 307px;
+    background-position-x: 307px;
+    margin: auto;
   }
   .background__background-image {
     margin-top: 32px;
@@ -528,7 +534,7 @@ a {
   .title-section__buttons {
     display: inline-flex;
     margin-top: 20px;
-    margin-bottom: 19px;
+    padding-bottom: 19px;
   }
   .title-section__button {
     margin-bottom: 0px;
@@ -606,17 +612,19 @@ a {
     height: 133px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .background {
     height: 613px;
-    width: 1280px;
+    width: 1200px;
     top: 52px;
     background-size: 538px 538px;
-    left: 37.11%;
+    background-position-x: 435px;
+    padding-left: 554px;
+    padding-right: 410px;
   }
   .background__background-image {
     margin-top: 56px;
-    margin-left: 119px;
+    margin-left: 0px;
     width: 236px;
     height: 557px;
   }
@@ -637,7 +645,8 @@ a {
   }
   .title-section__buttons {
     margin-top: 25px;
-    margin-bottom: 121px;
+    margin-bottom: 56px;
+    padding-bottom: 0px;
   }
   .title-section__button {
     height: 40px;
@@ -666,9 +675,7 @@ a {
   }
   .description-section {
     padding-left: 77px;
-  }
-  .description-section__text {
-    padding-bottom: 45px;
+    padding-bottom: 20px;
   }
   .description-section__description {
     font-size: 14px;
@@ -690,7 +697,7 @@ a {
     padding: 0px;
   }
   .banner__image-box {
-    padding-top: 53px;
+    padding-top: 0px;
     padding-right: 109px;
   }
   .banner__image {
@@ -708,7 +715,7 @@ a {
   z-index: 5;
   padding-top: 121px;
   padding-bottom: 98px;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .products {
@@ -843,7 +850,6 @@ a {
     top: -210px;
     width: 100%;
     height: 335px;
-    background-position-x: center;
   }
 }
 
@@ -1524,6 +1530,7 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 66px;
 }
 @media screen and (max-width: 320px) {
   .customer .customer {
@@ -2124,5 +2131,353 @@ a {
     line-height: 1.75;
     letter-spacing: 0.02em;
     width: 330px;
+  }
+}
+footer {
+  background-color: var(--background-color-medium);
+  width: 100%;
+}
+
+.footer__container {
+  margin: 0 auto;
+  padding: 0px 20px 0px 21px;
+  display: block;
+}
+
+.footer__buttons {
+  display: block;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.footer__buttons--first {
+  margin-top: 56px;
+  background-color: var(--brand-color-dark);
+  width: 161.45px;
+  height: 44px;
+  border-radius: 22px;
+  color: white;
+  border: none;
+}
+
+.footer__buttons--second {
+  margin: 10px auto 0px auto;
+  background-color: white;
+  width: 161.45px;
+  height: 44px;
+  border-radius: 22px;
+  color: var(--brand-color-dark);
+  border: none;
+}
+
+.footer__big-text {
+  margin-top: 113px;
+  color: var(--brand-color-light);
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.footer__bigger-text {
+  margin: 0px;
+  margin-top: 17px;
+  width: 200px;
+  color: var(--brand-color-dark);
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.footer__icons {
+  display: flex;
+  padding-right: 0px;
+  justify-content: flex-end;
+}
+
+.footer__icons--inside {
+  margin-top: 43px;
+}
+
+.footer__icon1 {
+  margin-right: 28px;
+  border-radius: 50%;
+  fill: var(--brand-color-light);
+  width: 34px;
+  height: 34px;
+}
+
+.footer__icon2 {
+  margin-right: 28px;
+  border-radius: 50%;
+  fill: var(--brand-color-light);
+  width: 34px;
+  height: 34px;
+}
+
+.footer__icon3 {
+  margin-right: 0px;
+  border-radius: 50%;
+  fill: var(--brand-color-light);
+  width: 34px;
+  height: 34px;
+}
+
+.footer__contact-text {
+  margin-top: 46px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: right;
+  color: #000000;
+  align-self: flex-end;
+}
+
+.footer__contact-text > span {
+  color: var(--brand-color-dark);
+}
+
+.footer__abyss {
+  margin-top: 65px;
+  border-top: #e1e1e1 solid 1px;
+}
+
+.footer__abyss--text {
+  margin: 22px auto 25px auto;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--text-color-medium);
+}
+
+@media screen and (min-width: 772px) and (max-width: 1280px) {
+  .footer__buttons {
+    display: flex;
+  }
+  .footer__container {
+    padding: 0px 36px;
+  }
+  .footer__buttons--first {
+    margin: 56px auto 0px auto;
+    margin-right: 5px;
+    background-color: var(--brand-color-dark);
+    width: 191.45px;
+    height: 44px;
+  }
+  .footer__buttons--second {
+    margin: 56px auto 0px auto;
+    margin-left: 5px;
+    background-color: white;
+    width: 191.45px;
+    height: 44px;
+  }
+  .footer__columns {
+    display: flex;
+    margin-top: 158px;
+    align-content: flex-end;
+  }
+  .footer__big-text {
+    margin-top: 7px;
+    color: var(--brand-color-light);
+    width: 340px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+  .footer__bigger-text {
+    margin-top: 16px;
+    width: 340px;
+    color: var(--brand-color-dark);
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .footer__icon1 {
+    margin-right: 30px;
+    border-radius: 50%;
+    fill: var(--brand-color-light);
+  }
+  .footer__icon2 {
+    margin-right: 30px;
+    border-radius: 50%;
+    fill: var(--brand-color-light);
+  }
+  .footer__icon3 {
+    margin-right: 0px;
+    border-radius: 50%;
+    fill: var(--brand-color-light);
+  }
+  .footer__contact-text {
+    margin-top: 46px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: right;
+    color: #000000;
+    align-self: flex-end;
+    text-align: right;
+  }
+  .footer__contact-text > span {
+    color: var(--brand-color-dark);
+  }
+  .footer__abyss {
+    margin-top: 91px;
+    border-top: #e1e1e1 solid 1px;
+  }
+  .footer__abyss--text {
+    margin: 29px auto 18px auto;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--text-color-medium);
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 10000px) {
+  .footer__container {
+    margin: 0 auto;
+    display: block;
+    padding: 0px 114px 0px 116px;
+  }
+  .footer__buttons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .footer__buttons--first {
+    margin: auto;
+    margin-top: 86px;
+    margin-right: 7.5px;
+    background-color: var(--brand-color-dark);
+    width: 198px;
+    height: 44px;
+    cursor: pointer;
+  }
+  .footer__buttons--second {
+    background-color: white;
+    margin: auto;
+    margin-top: 86px;
+    margin-left: 7.5px;
+    width: 198px;
+    height: 44px;
+    margin-left: 7.5px;
+    cursor: pointer;
+  }
+  .footer__columns {
+    display: flex;
+    margin-top: 172px;
+    margin-right: 0px;
+    gap: 257px;
+    padding-right: 0px;
+    justify-content: space-between;
+  }
+  .footer__big-text {
+    margin-top: 7px;
+    width: 472px;
+    color: var(--brand-color-light);
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .footer__bigger-text {
+    margin-top: 16px;
+    width: 474px;
+    color: var(--brand-color-dark);
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .footer__icon1 {
+    margin-right: 25px;
+    border-radius: 50%;
+    fill: var(--brand-color-light);
+    width: 34px;
+    height: 34px;
+  }
+  .footer__icon1:hover {
+    fill: var(--brand-color-dark);
+  }
+  .footer__icon2 {
+    margin-right: 25px;
+    border-radius: 50%;
+    fill: var(--brand-color-light);
+  }
+  .footer__icon2:hover {
+    fill: var(--brand-color-dark);
+  }
+  .footer__icon3 {
+    margin-right: 0px;
+    border-radius: 50%;
+    fill: var(--brand-color-light);
+  }
+  .footer__icon3:hover {
+    fill: var(--brand-color-dark);
+  }
+  .footer__icons--inside {
+    margin: 0px;
+  }
+  .footer__contact-text {
+    margin-top: 50px;
+    color: #000000;
+    align-self: flex-end;
+    text-align: right;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  .footer__contact-text > span {
+    color: var(--brand-color-dark);
+  }
+  .footer__abyss {
+    margin-top: 98px;
+    border-top: #e1e1e1 solid 1px;
+  }
+  .footer__abyss--text {
+    margin: 9px auto 10px auto;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--text-color-medium);
   }
 }/*# sourceMappingURL=main.css.map */
