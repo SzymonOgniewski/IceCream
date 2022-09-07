@@ -178,6 +178,8 @@ a {
   }
   .navigation__button__icon {
     margin-left: 13px;
+    width: 10px;
+    height: 8px;
   }
   .navigation__button:focus {
     background-color: #ecebeb;
@@ -1835,16 +1837,16 @@ a {
   position: absolute;
 }
 .buttons-grid__icon--first {
-  width: 3.61px;
-  height: 8px;
-  top: 19px;
+  width: 7px;
+  height: 10px;
+  top: 17.5px;
   right: 17.84px;
   fill: #ffffff;
 }
 .buttons-grid__icon--second {
-  width: 4.28px;
-  height: 8px;
-  top: 19px;
+  width: 7px;
+  height: 10px;
+  top: 17.5px;
   right: 31.3px;
   fill: #d41443;
 }
@@ -1937,11 +1939,11 @@ a {
     position: absolute;
   }
   .buttons-grid__icon--first {
-    width: 4.28px;
+    width: 7px;
     right: 34.77px;
   }
   .buttons-grid__icon--second {
-    top: 19px;
+    width: 7px;
     right: 38.63px;
   }
 }
@@ -2034,11 +2036,11 @@ a {
     padding-right: 13.62px;
   }
   .buttons-grid__icon--first {
-    width: 4.43px;
+    width: 7px;
     right: 35.96px;
   }
   .buttons-grid__icon--second {
-    width: 4.43px;
+    width: 7px;
     right: 39.96px;
   }
 }
