@@ -40,7 +40,9 @@ a {
   background-color: #e17992;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+
   z-index: 950;
+
 }
 
 .menu-container.is-open {
@@ -146,7 +148,9 @@ a {
   background-color: transparent;
   border-radius: 50%;
   outline: none;
+
   z-index: 100;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -172,7 +176,9 @@ a {
     line-height: 1.301875;
     text-align: center;
     color: #d41443;
+
     z-index: 100;
+
   }
   .navigation__button__icon {
     margin-left: 13px;
@@ -200,7 +206,9 @@ a {
   }
   .hero-header__nav-list {
     display: flex;
+
     z-index: 100;
+
   }
   .hero-header__nav-list__link {
     font-family: "DM Sans";
