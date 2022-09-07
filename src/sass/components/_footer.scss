@@ -57,6 +57,7 @@
   height: 32px;
   background-color: map-get($color, brand-color-light);
   border-radius: 50%;
+  cursor: pointer;
   &:not(:last-child) {
     margin-right: 24px;
   }

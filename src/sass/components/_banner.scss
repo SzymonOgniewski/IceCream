@@ -74,6 +74,9 @@
     &:focus {
       color: map-get($color, text-color-light);
       background-color: map-get($color, brand-color-dark);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      transition-property: background-color, color;
     }
   }
 }

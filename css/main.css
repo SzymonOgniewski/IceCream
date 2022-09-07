@@ -133,6 +133,7 @@ a {
 .hero-header__logo {
   padding-left: 20px;
   padding-top: 6px;
+  cursor: pointer;
 }
 
 .hero-header__nav-list {
@@ -172,13 +173,19 @@ a {
     line-height: 1.301875;
     text-align: center;
     color: #d41443;
+    cursor: pointer;
     z-index: 100;
   }
   .navigation__button__icon {
     margin-left: 13px;
   }
-  .navigation__button:focus,
-.navigation__button :hover {
+  .navigation__button:focus {
+    background-color: #ecebeb;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: background-color;
+  }
+  .navigation__button:hover {
     background-color: #ecebeb;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
@@ -259,6 +266,7 @@ a {
   position: absolute;
   top: 10px;
   right: 15px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -388,10 +396,16 @@ a {
   font-size: 16px;
   line-height: 1.301875;
   text-align: center;
+  cursor: pointer;
   color: #d41443;
 }
-.header-modal-form__submit-button:focus,
-.header-modal-form__submit-button :hover {
+.header-modal-form__submit-button:focus {
+  background-color: #ecebeb;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: background-color;
+}
+.header-modal-form__submit-button:hover {
   background-color: #ecebeb;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -474,6 +488,9 @@ a {
 .title-section__button:hover, .title-section__button:focus {
   color: #ffffff;
   background-color: #d41443;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: background-color, color;
 }
 
 .icon-section {
@@ -1009,6 +1026,7 @@ a {
 }
 
 .product-card__button {
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1018,6 +1036,7 @@ a {
   border: none;
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .product-card__button:hover, .product-card__button:focus {
   background-color: #d41443;
@@ -1793,6 +1812,9 @@ a {
 }
 .buttons-grid__button--franchise:hover, .buttons-grid__button--franchise:focus {
   background-color: #ecebeb;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: background-color;
 }
 .buttons-grid__button-text {
   font-family: "DM Sans";
@@ -2194,6 +2216,7 @@ a {
   height: 32px;
   background-color: #ffa5ba;
   border-radius: 50%;
+  cursor: pointer;
 }
 .footer-icon-background:not(:last-child) {
   margin-right: 24px;
