@@ -7,19 +7,30 @@
   padding: 0px 20px 0px 21px;
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .footer__icons--inside {
+    margin-top: 43px;
+  }
+  .footer__big-text {
+    padding-top: 113px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__big-text {
     padding-top: 165px;
   }
+  .footer__icons--inside {
+    padding-top: 165px;
+  }
 }
 .footer__big-text {
-  padding-top: 113px;
   color: map-get($color, brand-color-dark);
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+  line-height: calc(20.61 / 18);
   text-transform: uppercase;
 }
 .footer__bigger-text {
@@ -35,13 +46,27 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-.footer__icons {
+
+.footer-icon-list {
   display: flex;
-  padding-right: 0px;
+  flex-direction: row;
   justify-content: flex-end;
 }
-.footer__icons--inside {
-  margin-top: 43px;
+.footer-icon-background {
+  width: 32px;
+  height: 32px;
+  background-color: map-get($color, brand-color-light);
+  border-radius: 50%;
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+  &:hover,
+  :focus {
+    background-color: map-get($color, brand-color-dark);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: background-color;
+  }
 }
 .footer__icon1 {
   margin-right: 28px;
@@ -65,9 +90,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 22px;
-
   text-align: right;
-
   color: #000000;
   align-self: flex-end;
 }
@@ -92,14 +115,14 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .footer__buttons {
-    display: flex;
+  .footer__icons--inside {
   }
   .footer__container {
     padding: 0px 36px;
   }
   .footer__columns {
     display: flex;
+    justify-content: space-between;
     align-content: flex-end;
   }
   .footer__big-text {
@@ -108,8 +131,8 @@
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 26px;
+    line-height: calc(29.72 / 26);
     text-transform: uppercase;
   }
   .footer__bigger-text {
@@ -119,41 +142,22 @@
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
-    font-size: 34px;
-    line-height: 39px;
+    font-size: 48px;
+    line-height: calc(54.96 / 48);
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
-  .footer__icon1 {
-    margin-right: 30px;
-    border-radius: 50%;
-    fill: map-get($color, brand-color-light);
-  }
-  .footer__icon2 {
-    margin-right: 30px;
-    border-radius: 50%;
-    fill: map-get($color, brand-color-light);
-  }
-  .footer__icon3 {
-    margin-right: 0px;
-    border-radius: 50%;
-    fill: map-get($color, brand-color-light);
-  }
+
   .footer__contact-text {
     margin-top: 46px;
-
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 26px;
-
     text-align: right;
-
     color: #000000;
     align-self: flex-end;
-
-    text-align: right;
   }
   .footer__contact-text > span {
     color: map-get($color, brand-color-dark);
@@ -169,7 +173,6 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
-
     text-align: center;
 
     color: map-get($color, text-color-medium);
@@ -182,36 +185,9 @@
     display: block;
     padding: 0px 114px 0px 116px;
   }
-  .footer__buttons {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-  }
 
-  .footer__buttons--first {
-    margin: auto;
-    margin-top: 86px;
-    margin-right: 7.5px;
-    background-color: var(--brand-color-dark);
-    width: 198px;
-    height: 44px;
-    cursor: pointer;
-  }
-  .footer__buttons--second {
-    background-color: white;
-    margin: auto;
-    margin-top: 86px;
-    margin-left: 7.5px;
-    width: 198px;
-    height: 44px;
-    margin-left: 7.5px;
-    cursor: pointer;
-  }
   .footer__columns {
     display: flex;
-    margin-top: 172px;
     margin-right: 0px;
     gap: 257px;
     padding-right: 0px;
@@ -219,9 +195,8 @@
   }
 
   .footer__big-text {
-    margin-top: 7px;
     width: 472px;
-    color: var(--brand-color-light);
+    color: map-get($color, brand-color-light);
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -233,45 +208,21 @@
   .footer__bigger-text {
     margin-top: 16px;
     width: 474px;
-
-    color: var(--brand-color-dark);
+    color: map-get($color, brand-color-dark);
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
-    font-size: 58px;
-    line-height: 66px;
+    font-size: 57px;
+    line-height: calc(66.41 / 58);
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
   .footer__icon1 {
     margin-right: 25px;
     border-radius: 50%;
-    fill: var(--brand-color-light);
+    fill: map-get($color, brand-color-light);
     width: 34px;
     height: 34px;
-  }
-  .footer__icon1:hover {
-    fill: var(--brand-color-dark);
-  }
-  .footer__icon2 {
-    margin-right: 25px;
-    border-radius: 50%;
-    fill: var(--brand-color-light);
-  }
-  .footer__icon2:hover {
-    fill: var(--brand-color-dark);
-  }
-
-  .footer__icon3 {
-    margin-right: 0px;
-    border-radius: 50%;
-    fill: var(--brand-color-light);
-  }
-  .footer__icon3:hover {
-    fill: var(--brand-color-dark);
-  }
-  .footer__icons--inside {
-    margin: 0px;
   }
   .footer__contact-text {
     margin-top: 50px;
@@ -287,7 +238,7 @@
     color: #000000;
   }
   .footer__contact-text > span {
-    color: var(--brand-color-dark);
+    color: map-get($color, brand-color-dark);
   }
   .footer__abyss {
     margin-top: 98px;
