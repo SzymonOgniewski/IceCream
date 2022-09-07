@@ -119,7 +119,7 @@
 }
 
 .buttons-grid {
-  margin: 54px auto 113px auto;
+  margin: 54px auto 0 auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -254,7 +254,6 @@
   }
   .buttons-grid {
     margin-top: 81px;
-    margin-bottom: 158px;
     margin-right: 196px;
     margin-left: 196px;
     flex-direction: row;
@@ -365,7 +364,7 @@
     }
   }
   .buttons-grid {
-    margin: 86px 444px 165px 443px;
+    margin: 86px 444px 0 443px;
     flex-direction: row;
     gap: 15px;
     justify-content: center;

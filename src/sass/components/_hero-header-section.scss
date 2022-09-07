@@ -34,6 +34,11 @@
     right: 15px;
   }
 }
+@media screen and (max-width: 767px) {
+  .header-modal {
+    width: 100%;
+  }
+}
 .header-modal-form {
   border: none;
 
