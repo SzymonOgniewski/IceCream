@@ -1764,7 +1764,7 @@ a {
 }
 
 .buttons-grid {
-  margin: 54px auto 113px auto;
+  margin: 54px auto 0 auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1892,7 +1892,6 @@ a {
   }
   .buttons-grid {
     margin-top: 81px;
-    margin-bottom: 158px;
     margin-right: 196px;
     margin-left: 196px;
     flex-direction: row;
@@ -2133,8 +2132,8 @@ a {
     width: 330px;
   }
 }
-footer {
-  background-color: var(--background-color-medium);
+.footer-section {
+  background-color: #fff5f6;
   width: 100%;
 }
 
@@ -2144,37 +2143,14 @@ footer {
   display: block;
 }
 
-.footer__buttons {
-  display: block;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .footer__big-text {
+    padding-top: 165px;
+  }
 }
-
-.footer__buttons--first {
-  margin-top: 56px;
-  background-color: var(--brand-color-dark);
-  width: 161.45px;
-  height: 44px;
-  border-radius: 22px;
-  color: white;
-  border: none;
-}
-
-.footer__buttons--second {
-  margin: 10px auto 0px auto;
-  background-color: white;
-  width: 161.45px;
-  height: 44px;
-  border-radius: 22px;
-  color: var(--brand-color-dark);
-  border: none;
-}
-
 .footer__big-text {
-  margin-top: 113px;
-  color: var(--brand-color-light);
+  padding-top: 113px;
+  color: #d41443;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -2187,7 +2163,7 @@ footer {
   margin: 0px;
   margin-top: 17px;
   width: 200px;
-  color: var(--brand-color-dark);
+  color: #d41443;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -2210,25 +2186,19 @@ footer {
 .footer__icon1 {
   margin-right: 28px;
   border-radius: 50%;
-  fill: var(--brand-color-light);
-  width: 34px;
-  height: 34px;
+  fill: #ffa5ba;
 }
 
 .footer__icon2 {
   margin-right: 28px;
   border-radius: 50%;
-  fill: var(--brand-color-light);
-  width: 34px;
-  height: 34px;
+  fill: #ffa5ba;
 }
 
 .footer__icon3 {
   margin-right: 0px;
   border-radius: 50%;
-  fill: var(--brand-color-light);
-  width: 34px;
-  height: 34px;
+  fill: #ffa5ba;
 }
 
 .footer__contact-text {
@@ -2244,7 +2214,7 @@ footer {
 }
 
 .footer__contact-text > span {
-  color: var(--brand-color-dark);
+  color: #d41443;
 }
 
 .footer__abyss {
@@ -2260,38 +2230,22 @@ footer {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  color: var(--text-color-medium);
+  color: #907e82;
 }
 
-@media screen and (min-width: 772px) and (max-width: 1280px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer__buttons {
     display: flex;
   }
   .footer__container {
     padding: 0px 36px;
   }
-  .footer__buttons--first {
-    margin: 56px auto 0px auto;
-    margin-right: 5px;
-    background-color: var(--brand-color-dark);
-    width: 191.45px;
-    height: 44px;
-  }
-  .footer__buttons--second {
-    margin: 56px auto 0px auto;
-    margin-left: 5px;
-    background-color: white;
-    width: 191.45px;
-    height: 44px;
-  }
   .footer__columns {
     display: flex;
-    margin-top: 158px;
     align-content: flex-end;
   }
   .footer__big-text {
-    margin-top: 7px;
-    color: var(--brand-color-light);
+    color: #ffa5ba;
     width: 340px;
     font-family: "Titan One";
     font-style: normal;
@@ -2303,7 +2257,7 @@ footer {
   .footer__bigger-text {
     margin-top: 16px;
     width: 340px;
-    color: var(--brand-color-dark);
+    color: #d41443;
     font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
@@ -2315,17 +2269,17 @@ footer {
   .footer__icon1 {
     margin-right: 30px;
     border-radius: 50%;
-    fill: var(--brand-color-light);
+    fill: #ffa5ba;
   }
   .footer__icon2 {
     margin-right: 30px;
     border-radius: 50%;
-    fill: var(--brand-color-light);
+    fill: #ffa5ba;
   }
   .footer__icon3 {
     margin-right: 0px;
     border-radius: 50%;
-    fill: var(--brand-color-light);
+    fill: #ffa5ba;
   }
   .footer__contact-text {
     margin-top: 46px;
@@ -2340,7 +2294,7 @@ footer {
     text-align: right;
   }
   .footer__contact-text > span {
-    color: var(--brand-color-dark);
+    color: #d41443;
   }
   .footer__abyss {
     margin-top: 91px;
@@ -2354,10 +2308,10 @@ footer {
     font-size: 14px;
     line-height: 21px;
     text-align: center;
-    color: var(--text-color-medium);
+    color: #907e82;
   }
 }
-@media screen and (min-width: 1281px) and (max-width: 10000px) {
+@media screen and (min-width: 1280px) {
   .footer__container {
     margin: 0 auto;
     display: block;
