@@ -48,7 +48,7 @@
   }
 
   &__button {
-    background-color: map-get($color, text-color-ligt);
+    background-color: map-get($color, text-color-light);
     border-radius: 20px;
     border: 0px;
     font-family: map-get($fontfamily, description-font);
