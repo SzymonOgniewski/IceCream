@@ -857,6 +857,7 @@ a {
   height: 252px;
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 @media screen and (min-width: 768px) {
   .product-card::before {
