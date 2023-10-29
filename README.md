@@ -1,3 +1,6 @@
-## [IceCream](https://szymonogniewski.github.io/IceCream/)
+# [IceCream](https://szymonogniewski.github.io/IceCream/)
 
-IceCream is a team project made using HTML, SCSS, JavaScript and Parcel. This is website with neat, tasty design and responsive layout.
+IceCream is a group project of business website made for a potential customer. The website is fully responsive made with mobile first principle.
+
+## Technologies 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
